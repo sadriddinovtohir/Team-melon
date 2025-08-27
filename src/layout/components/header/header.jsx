@@ -24,8 +24,6 @@ export default function Header() {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
-  console.log(sizedrower);
-
   return (
     <header>
       <Container maxWidth="xl">

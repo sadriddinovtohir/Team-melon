@@ -14,11 +14,11 @@ export default function Footer() {
         backgroundColor: COLOR.grey,
         paddingTop: "48px",
         paddingBottom: "48px",
-        paddingLeft: "80px",
-        paddingRight: "80px",
+        paddingLeft: "8px",
+        paddingRight: "8px",
       }}
     >
-      <Container>
+      <Container maxWidth="xl">
         <Grid container spacing={10} justifyContent={"space-between"}>
           <Grid item xs={12} sm={6} md={3}>
             <Stack>

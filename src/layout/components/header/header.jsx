@@ -7,13 +7,14 @@ import {
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { COLOR } from "../../../config/js/color";
 import Header_meelon_icons from "../../../assets/icons/header_meelon_icons";
 import Sun_icons from "../../../assets/icons/sun_icons";
 import Langueg_icons from "../../../assets/icons/langueg_icons";
 import React from "react";
 import Menu_icons from "../../../assets/icons/menu_icons";
+import Register from "../../../components/register/register";
 
 export default function Header() {
   const sizedrower = useMediaQuery("(max-width:1200px)");
@@ -39,7 +40,9 @@ export default function Header() {
             sx={{ gap: { sm: "10px", md: "48px", lg: "30px", xl: "44px" } }}
           >
             <Box color={COLOR.fill} mt={"-7px"}>
+              <Link to={"/"} style={{color:COLOR.fill}}>
               <Header_meelon_icons />
+              </Link>
             </Box>
             {!linksize ? (
               <Stack
@@ -183,7 +186,8 @@ export default function Header() {
                 >
                   {" "}
                   <Typography variant="h2" fontWeight={700} fontSize={"14px"}>
-                    Roʻyxatdan oʻtish
+                   {<Register/> ?  "Roʻyxatdan oʻtish" : ""}
+
                   </Typography>{" "}
                 </Button>
               </Stack>

@@ -3,7 +3,7 @@ import contact from '../assets/img/contact.png';
 import tex_concad from '../assets/img/tel_contact.png';
 export default function Contacts() {
   const imgsize = useMediaQuery('(max-width:552px)');
-  const imgs_size = useMediaQuery('(max-width:1249px)');
+  const imgs_size = useMediaQuery('(max-width:1266px)');
   return (
     <Container maxWidth="xl">
       {!imgs_size ? (

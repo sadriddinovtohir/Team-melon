@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Center() {
-  return (
-    <div>
-      Center
-    </div>
-  )
+  return <div>Center</div>;
 }
